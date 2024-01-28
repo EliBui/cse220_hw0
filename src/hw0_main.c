@@ -49,7 +49,7 @@ int main() {
         scanf("%d", &index);
         index--;
 
-        while(game[index] == 0 || index > 4) {
+        while(game[index] == 0 || index > 3 || index < 0) {
             printf("Invalid choice. Choose a section (1-4): ");
             scanf("%d", &index);
             index--;
