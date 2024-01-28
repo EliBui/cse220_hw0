@@ -38,7 +38,6 @@ int checkWin(int *game) {
 }
 
 int main() {
-    printf("start\n");
     int game[] = {2, 2, 2, 2, 0};
     int index = 0;
     int gameState = 1; //0 = lost, 1 = continue, 2 = won
@@ -77,7 +76,7 @@ int main() {
 
     if(gameState == 0) {
         printBoard(game);
-        printf("You lost because the last counter fell into section %d\n", index+1);
+        printf("You lost because the last counter fell into section %d.\n", index+1);
     } else {
         printf("You won!\n");
     }
